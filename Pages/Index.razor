@@ -1,0 +1,73 @@
+﻿@page "/"
+
+@using Labb3_Databse_Blazor.Data;
+
+
+<h3>Welcome Robin!</h3>
+
+<p>This <button class="btn btn-danger" onclick="alert">Red Bull Button</button> Is Out Of Function</p>
+
+
+
+
+
+
+
+
+
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Pepsi Max
+        <button class="btn btn-danger" onclick="">Order</button>
+        <span class="badge bg-primary rounded-pill">14</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Velo Snus
+        <button class="btn btn-danger" onclick="">Order</button>
+        <span class="badge bg-primary rounded-pill">2</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cola Zero
+        <button class="btn btn-danger" @onclick"">Order</button>
+        <span class="badge bg-primary rounded-pill">1</span>
+    </li>
+</ul>
+
+
+  
+@code{
+
+
+    // public void AlertBtn()
+    // {
+    //     <div class="alert alert-dismissible alert-danger">
+    //         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    //         <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    //     </div>
+
+    // }
+
+    // public void OrderBtn()
+    // {
+        
+    // }
+
+    // MongoCRUD db = new MongoCRUD("QuizDB");
+
+
+    // public void AddQuestion()
+    // {
+    //     Models.Questions q1 = new Models.Questions
+    //         {
+    //             Statement = "Vem är känd som 'Kungen' inom fotbollen?",
+    //             Options = new List<string> { "Zinedine Zidane", "Pele", "Diego Maradona", "Thierry Henry" },
+    //             CorrectAnswer = "Pele"
+
+    //         };
+    //     db.AddQuestionDB("Question", q1);
+        
+    // }
+    
+
+
+}

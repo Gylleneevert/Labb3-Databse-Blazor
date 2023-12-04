@@ -1,0 +1,50 @@
+﻿@page "/EditQuestion"
+@inject NavigationManager nav;
+
+
+
+
+<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+  <div class="card-header">Question</div>
+  <div class="card-body">
+    <h4><label for="statementInput" class="form-label mt-4">Update The Question</label></h4>
+    <input type="text" class="form-control-plaintext text-light" id="StatementInput" aria-describedby="Statement" @bind="Program.QuestionToEdit.Statement">
+        
+        <input type="text" class="form-control-plaintext text-light" id="@($"Option{0}")" aria-describedby="answer0" @bind="Program.QuestionToEdit.Options[0]">
+        <input class="form-check-input btn btn-danger" type="radio" id="@($"@optionsRadios{0}")" value="@Program.QuestionToEdit.Options[0]" checked="@correctAnswer(0)">
+        <input type="text" class="form-control-plaintext text-light" id="@($"Option{1}")" aria-describedby="Answer1" @bind="Program.QuestionToEdit.Options[1]">
+        <input class="form-check-input btn btn-danger" type="radio" id="@($"@optionsRadios{1}")" value="@Program.QuestionToEdit.Options[1]" checked="@correctAnswer(1)">
+        <input type="text" class="form-control-plaintext text-light" id="@($"Option{2}")" aria-describedby="Answer2" @bind="Program.QuestionToEdit.Options[2]">
+        <input class="form-check-input btn btn-danger" type="radio" id="@($"@optionsRadios{2}")" value="@Program.QuestionToEdit.Options[2]" checked="@correctAnswer(2)">
+        <input type="text" class="form-control-plaintext text-light" id="@($"Option{3}")" aria-describedby="Answer3" @bind="Program.QuestionToEdit.Options[3]">
+        <input class="form-check-input btn btn-danger" type="radio" id="@($"@optionsRadios{3}")" value="@Program.QuestionToEdit.Options[3]" checked="@correctAnswer(3)">
+        
+        
+           
+        
+   
+        <div>
+        <button style="width: 100px" class="btn btn-danger" @onclick="() => SaveQuestion()">Save</button>
+        <button style="width: 100px" class="btn btn-danger" @onclick="() => DeleteQuestion()">Delete</button>
+        </div> 
+  </div>
+</div>
+ <div class="align-middle">
+<button class="btn btn-danger" @onclick="() => Cancel()">Go Back</button>
+</div>
+        
+            
+        
+            
+
+
+  
+
+
+
+
+@code {
+
+
+
+}

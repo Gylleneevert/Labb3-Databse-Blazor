@@ -1,0 +1,53 @@
+﻿@page "/Questions"
+@inject NavigationManager nav;
+@using Labb3_Databse_Blazor.Data;
+
+<h3>Questions</h3>
+
+<div class="row">
+@foreach (var question in questionList)
+{
+        <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+            <div class="card-header">Question</div>
+        <div class="card-body">
+            <h4 class="card-title">@question.Statement</h4>
+                @foreach (var option in question.Options)
+                {
+                   <p>@option</p>
+                }
+                <button class="btn btn-danger" @onclick="() => Edit(question)">Edit Question</button>
+        </div>
+    </div>
+}
+</div>
+
+
+
+
+
+@*  <div class="row">
+ @foreach (var question in questionList)
+ {
+        <div class="col-md-3">
+             <div class="card">
+                <div class="card-body">
+                    <p title="statement">@question.Statement</p>
+                    @foreach (var option in question.Options)
+                    {
+                        <p title="Options">@option</p>
+                    }
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+ }
+    </div> *@
+
+
+@code {
+    
+
+}

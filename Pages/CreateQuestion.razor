@@ -1,0 +1,24 @@
+﻿@page "/CreateQuestion"
+
+
+<h3>CreateQuestion</h3>
+
+
+<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+  <div class="card-header">Create Question</div>
+  <div class="card-body">
+        <input type="text" class="form-control-plaintext text-white" id="statementInput" @bind="statement" placeholder="Input Statement Here">
+        <input type="text" class="form-control-plaintext text-white" id="Option[0]" @bind="options[0]" placeholder="Input Option 1">
+        <input type="text" class="form-control-plaintext text-white" id="Option[1]" @bind="options[1]" placeholder="Input Option 2">
+        <input type="text" class="form-control-plaintext text-white" id="Option[2]" @bind="options[2]" placeholder="Input Option 3">
+        <input type="text" class="form-control-plaintext text-white" id="Option[3]" @bind="options[3]" placeholder="Input Option 4">
+       <button class="btn btn-danger" @onclick="SaveQuestion">Save</button>
+        
+  </div>
+</div>
+
+
+
+@code {
+    
+}
